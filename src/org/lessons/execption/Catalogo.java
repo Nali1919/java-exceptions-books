@@ -9,6 +9,8 @@ public class Catalogo {
 		System.out.println("Quanti libri?");
 		int numeroLibri = s.nextInt();
 		Libro[] libro = new Libro[numeroLibri];
+		
+		
 
 		for (int i = 0; i < numeroLibri; i++) {
 			System.out.println("Inserisci il nome del libro");
@@ -24,8 +26,7 @@ public class Catalogo {
 
 			try {
 				libro[i] = new Libro(titolo, numeroPagine, autore, editore);
-
-
+			
 				if (titolo.equals("")) {
 					throw new Exception("non puo' essere vuoto!");
 				}

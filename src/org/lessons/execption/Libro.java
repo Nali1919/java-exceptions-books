@@ -7,10 +7,10 @@ class Libro {
 	private String editore;
 	public Libro(String titolo, int pagineLibro, String autore, String editore) throws Exception {
 		super();
-		setTitolo(titolo);
-		setPagineLibro(pagineLibro);
-		setAutore(autore);
-		setEditore(editore);
+		this.setTitolo(titolo);
+		this.setPagineLibro(pagineLibro);
+		this.setAutore(autore);
+		this.setEditore(editore);
 	}
 	public String getTitolo() {
 		return titolo;
